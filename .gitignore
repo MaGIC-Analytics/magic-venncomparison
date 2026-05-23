@@ -1,0 +1,9 @@
+# R session
+.Rhistory
+.RData
+.Rproj.user/
+.Ruserdata
+
+# OS / editor
+.DS_Store
+*~
