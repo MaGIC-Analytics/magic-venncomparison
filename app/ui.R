@@ -14,7 +14,7 @@ library(UpSetR)
 
 tagList(
     tags$head(
-        #includeHTML(("www/GA.html")),
+        includeHTML(("www/GA.html")),
         tags$style(type = 'text/css','.navbar-brand{display:none;}'),
         tags$style(HTML("
             .control-group-panel {
