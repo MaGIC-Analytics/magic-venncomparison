@@ -1,6 +1,11 @@
 # ─── Utilities ─────────────────────────────────────────────────────────────────
 
-`%||%` <- function(a, b) if (!is.null(a) && length(a) > 0) a else b
+`%||%` <- function(a, b) {
+    if (is.null(a)) return(b)
+    if (length(a) == 0) return(b)
+    if (length(a) == 1 && is.character(a) && !nzchar(a)) return(b)
+    a
+}
 
 read_delim_auto <- function(path) {
     ext <- tolower(tools::file_ext(path))
